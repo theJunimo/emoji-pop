@@ -1,0 +1,24 @@
+{
+    //파일이 save될 때 마다 autoFix해주는 설정
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        { "language": "typescript", "autoFix": true },
+        { "language": "typescriptreact", "autoFix": true }
+    ],
+    //아래는 만약 에디터의 formatOnSave 옵션을 true로 세팅해뒀다면 js와 ts파일에서 아래의 formatting 커맨드를 방지해주어야한다.
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "[typescript]": {
+        "editor.formatOnSave": false
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": false
+    }
+}
